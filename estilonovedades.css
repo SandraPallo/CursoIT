@@ -1,0 +1,31 @@
+body{
+	background-color:#7B2E1E;
+}
+.contenido
+{
+	display: table;
+	border-top: 100px;
+	padding-top: 100px;
+}
+
+.cuerpo {  
+	width:	960;
+	margin: auto;
+	
+}
+
+
+.Novedad{
+
+	display: table-cell;
+	float: left;
+	width:200px;
+	margin-left: 250px;
+	
+}
+.video{
+	margin-left: 20px;
+	display: table-cell;
+float: right;
+}
+

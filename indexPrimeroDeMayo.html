@@ -4,21 +4,69 @@
 <head>
    <meta charset="UTF-8">
    <title>Primero de Mayo</title>
-   <link rel="stylesheet" type="text/css" href="estilo.css" />
-     
-   
+    <!--,<meta name="viewport" content="width-device-width"> user-scalable=no>-->
+	 <link rel="stylesheet" type="text/css" href="estilo.css" />
+  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
 </head>
-  <body id="Fondo">
-     
-         <div id="Menu">
+  <body>
+
+ <div class= "container">
+  
+  <div class="row">
+  	<div class="col">
+	 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+	  <div class="carousel-inner">
+			<div class="item active">
+			  <img class="d-block w-100" src="imagenes/5cc.jpg" >
+			</div>
+			<div class="item">
+			  <img class="d-block w-100" src="imagenes/10cc.jpg" >
+			</div>
+			<div class="item">
+			  <img class="d-block w-100" src="imagenes/20cc.jpg">
+			</div>
+	  </div>
+     </div>
+    </div>
+   </div>
+  
+  
+   <div class="row">
+  
+    <div class="col Menu" >
 			<ul>
 			  <a href="#">Inicio</strong></a>
 			  <a href="Novedades.html">Novedades</a>
 			  <a href="#">Nosotros</a>
-			 <a href="#">Contacto</a>
-			 <a href="#">Pedidos</a>
+			  <a href="#">Contacto</a>
+			  <a href="#">Pedidos</a>
 			</ul> 	 
-	   </div>
-	   
+    </div>
+	
+    <div class="col">
+       <img  src="imagenes/ternero.jpg" />
+    </div>
+	
+    <div class="col">
+			<form action=miScript.php" method="GET">
+				<label for="to">Para:  </label><br><br>
+				<input id="to" type="email"><br><br>
+				<label for="subjet">Asunto:</label><br><br>
+				<input id="to" type="text"><br><br>
+				<label for="body">Cuerpo:</label><br><br>
+				<input id="to" type="textarea"><br><br>
+				<button type="button" class="btn btn-danger">Enviar</button><br><br>
+			</form>
+    </div>
+   </div>
+  </div>
+ 
   </body>
 </html>
