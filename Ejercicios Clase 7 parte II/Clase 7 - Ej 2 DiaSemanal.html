@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+   
+ 
+	<head>
+        <meta charset="UTF-8">
+		<script>
+		 
+		
+			function diasemana(a)
+			
+			{
+			
+             var dia=["Lunes","Martes", "Miércoles", "Jueves", "Viernes", "Fin de Semana", "Fin de Semana"];
+			 if (a>0 & a<8)
+			    { return ("El día de la semana número "+a+"  es "+ dia[a-1]);}
+			 else
+			   { return ("Error!!! el número "+a+" no pertenese a un día de semana" );}
+			
+			}
+			
+		
+		</script>
+		
+	</head>
+
+	<body>
+ 
+		<p id="DEMO"></p>
+		  
+		  <script>
+            
+			document.getElementById("DEMO").innerHTML = diasemana(10); //dentro del parentesis se ingresa el valor de escalones del árbol
+
+		  </script>
+
+	</body>
+
+</html>

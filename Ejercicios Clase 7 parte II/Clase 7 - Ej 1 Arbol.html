@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  
+ 
+	<head>
+		
+		<script>
+			function arbol(a)
+			{
+			var i=0;
+			var texto="";
+			while (i<a)
+				{ 
+				for (u=0; i>u; u++)
+					{texto += "*";}
+				texto += "*<br>";
+				i++;
+				};
+			return texto;
+			}
+		
+		</script>
+		
+	</head>
+
+	<body>
+ 
+		<p id="DEMO"></p>
+		  
+		  <script>
+		
+			document.getElementById("DEMO").innerHTML = arbol(5); //dentro del parentesis se ingresa el valor de escalones del árbol
+
+		  </script>
+
+	</body>
+
+</html>
