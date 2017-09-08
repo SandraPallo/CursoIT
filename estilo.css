@@ -5,41 +5,39 @@
 
 .Menu{
 	  
-	   border-top:0px;
-	   padding-top: 0px;
-	   
+	border-top:0px;
+	padding-top: 0px;
+    padding-left: -10px;
+	border-left:-10px;
 	   
 }
 .imagen{
-	border-top:0px;
-	padding-top: 0px;
-	
+	border-top:20px;
+	padding-top: 20px;
 	padding-bottom: 0px;
-	
-
+	margin-top:20px;
 }
 
 
 .Menu ul{ 
 	border-top:0px;
-	padding-top: 20px;
-	padding-right: 10px;
-	padding-bottom: 20px;
-	padding-left: -10px;
-	border-left:-10px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+
 	
 }
 .Menu ul a{
 	
 	text-decoration:none;
-	color:white;
+	color:black;
 	display: block;
 	font: 16px Arial;
 	margin-left:0px;
 	
 	background:#CD5D14;
 	margin-bottom: 20px;
-	padding: 25px;
+	padding: 20px;
 	border-radius:15px;
 }
 .Menu ul a:hover
@@ -47,12 +45,15 @@
     margin-left:15px;
 	background:#FAB78B;
 	box-shadow:5px 5px 0px 0px;}
-.mail{
-	border-top:60px;
-	padding-top:30px;
-   
-	border-left:10px;
+.font{
 	
 	font: 16px Arial;
-	color:white;
+color:white;}
+
+.vacio{
+	margin-top: 100px;
+	border-top: 80px;
+	padding-top: 100px;
+    
+
 }

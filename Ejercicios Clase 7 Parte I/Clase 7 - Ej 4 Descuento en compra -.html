@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+  
+ 
+	<head>
+		
+		<script>
+		
+			function cobro(a,b)
+			{
+			
+			
+			 if (a<200){ return a ;}  // no se hace descuento si el monto es menor a $200
+			 			 
+			 		
+				
+			 if ((a>=200) & (a<=400))
+			 {
+			 
+				 
+				 switch (b)    {
+					case "C":
+							
+						return ("El importe a pagar con tarjeta de crédito es $"+ (a -(a*10/100))+" ya tiene un descuento del 10%"); //descuento del 10% en crédito
+						break;
+						
+					case "D":
+						
+						return ("El importe a pagar con débito es $" +(a -(a*20/100))+" ya tiene un descuento del 20%"); //descuento del 20% en débito
+						break;
+						
+					case "E":
+					
+						return ("El importe a pagar en efectivo es $" +(a-(a*30/100))+" ya tiene un descuento del 30%"); //descuento del 30% en efectivo
+						break;		        
+							
+								} ;
+				}
+				if (a>400){return("El importe a pagar es $"+(a -(a*40/100))+" ya tiene un descuento del 40%"); }//descuento del 40% con cualquier medio si supera los $400
+			
+								
+								
+			}
+		
+		
+		</script>
+		
+	</head>
+
+	<body>
+ 
+		<p id="DEMO"></p>
+		  
+		  <script>
+			
+			document.getElementById("DEMO").innerHTML = cobro(370,"D"); //dentro del parentesis se ingresa el valor y luego la forma de pago
+
+		  </script>
+
+	</body>
+
+</html>
