@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+   
+ 
+	<head>
+        <meta charset="UTF-8">
+		<script>
+		 
+		
+			function PROMEDIO(cant,da)
+			
+			{
+			   
+			   var i=0;
+			   var sum=0;
+			   
+			   while(i<cant)
+                 {
+                  sum += parseInt(da[i])
+				  i++
+				 };
+            
+			    return ("El promedio es: " + (sum / cant));
+			
+			}
+			
+		
+		</script>
+		
+	</head>
+
+	<body>
+	 <p id="DEMO"></p>
+        <script type="text/javascript">
+	     var dato=[];
+		 var i=0;
+		 var cant= parseInt(prompt('Cuantos datos va a ingresar? ',''));  // aquí preguntará cuantos datos ingresará
+		 while (i< cant)
+		 {
+				dato[i] = prompt('Ingrese dato (sólo ENTEROS ): '+(i+1),''); // aquí podrá ingresar cada uno de los datos
+				i++;
+		 };
+		
+		 document.getElementById("DEMO").innerHTML =PROMEDIO(dato.length,dato);  // acá puedo usar en vez de dato.length cant, pero quería ver el uso de esta instrucción.
+
+		  </script>
+
+	</body>
+
+</html>

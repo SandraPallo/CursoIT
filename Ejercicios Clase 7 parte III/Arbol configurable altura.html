@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+   
+ 
+	<head>
+        <meta charset="UTF-8">
+		<script>
+			function arbol(a)
+			{
+			var i=0;
+			var texto="";
+			while (i<a)
+				{ 
+				for (u=0; i>u; u++)
+					{texto += "*";}
+				texto += "*<br>";
+				i++;
+				};
+			return texto;
+			}
+			
+		   function validacion(dato) 
+		   {
+		     entrada=parseInt(dato)
+			 
+				  if (isNaN(entrada)) 
+								{ return document.getElementById('DEMO').innerHTML="Ud.Ingresó un caracter incorrecto"}
+				  else 
+								{return document.getElementById('DEMO').innerHTML=arbol(cant)}
+		   }
+		</script>
+		
+	</head>
+
+	<body>
+	
+		
+	
+        <script type="text/javascript">
+			var cant=prompt('Ingrese cuantos niveles va a tener el árbol','')
+		   
+		</script>
+        
+		<div>
+		
+         <button onclick="document.getElementById('DEMO').innerHTML=validacion(cant)">Si ingresó un número podrá ver su árbol</button>  
+		  		  
+		 <p id="DEMO"></p>
+		
+		</div>
+		
+	</body>
+
+</html>
